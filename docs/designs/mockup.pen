@@ -1,0 +1,1810 @@
+{
+  "version": "2.11",
+  "children": [
+    {
+      "type": "frame",
+      "id": "y2r2Y",
+      "x": 0,
+      "y": 0,
+      "name": "Desktop - 1440px",
+      "width": 1440,
+      "fill": "$bg_dark",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "Jj2j3",
+          "name": "Hero",
+          "width": "fill_container",
+          "height": 900,
+          "layout": "none",
+          "children": [
+            {
+              "id": "LG5JS",
+              "type": "ref",
+              "ref": "petyR",
+              "layoutPosition": "absolute",
+              "x": 0,
+              "y": 0,
+              "name": "nav_inst",
+              "width": 1440
+            },
+            {
+              "type": "frame",
+              "id": "4F8D0",
+              "layoutPosition": "absolute",
+              "x": 619,
+              "y": 30,
+              "gap": 40,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "xyhnS",
+                  "fill": "$text_primary",
+                  "content": "About",
+                  "fontFamily": "$font_family_body",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "DCPpj",
+                  "fill": "$text_primary",
+                  "content": "Experience",
+                  "fontFamily": "$font_family_body",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "Kz7ao",
+                  "fill": "$text_primary",
+                  "content": "Projects",
+                  "fontFamily": "$font_family_body",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "2Fg14",
+              "x": 21,
+              "y": 386,
+              "name": "hero_title",
+              "fill": "$text_primary",
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#00000040",
+                "offset": {
+                  "x": 0,
+                  "y": 4
+                },
+                "blur": 4
+              },
+              "textGrowth": "fixed-width-height",
+              "width": 1419,
+              "height": 168,
+              "content": "M. BRYAN A. VIANA",
+              "lineHeight": 0.9,
+              "textAlign": "center",
+              "textAlignVertical": "middle",
+              "fontFamily": "$font_family_title",
+              "fontSize": 120,
+              "fontWeight": "Extra Bold"
+            },
+            {
+              "type": "frame",
+              "id": "qMT7T",
+              "x": 520,
+              "y": 279,
+              "name": "hero_text_cont",
+              "width": "fit_content(400)",
+              "height": "fit_content(400)",
+              "layout": "vertical",
+              "gap": 16,
+              "alignItems": "center"
+            },
+            {
+              "type": "text",
+              "id": "p1XY8V",
+              "x": 147,
+              "y": 732,
+              "name": "hero_title",
+              "fill": "$text_primary",
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#00000040",
+                "offset": {
+                  "x": 0,
+                  "y": 4
+                },
+                "blur": 4
+              },
+              "textGrowth": "fixed-width-height",
+              "width": 1293,
+              "height": 168,
+              "content": "// SOFTWARE ENGINEERING ",
+              "lineHeight": 0.9,
+              "textAlignVertical": "middle",
+              "fontFamily": "$font_family_title",
+              "fontSize": 52,
+              "fontWeight": "200"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "NvMFI",
+          "name": "Sticky Keywords",
+          "width": "fill_container",
+          "height": 800,
+          "layout": "vertical",
+          "gap": 24,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "fHYLg",
+              "layoutPosition": "absolute",
+              "x": 0,
+              "y": 0,
+              "name": "particle_bg",
+              "opacity": 0.3,
+              "width": "fill_container(0)",
+              "height": "fill_container(0)",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "Fy6QZ",
+                  "x": 100,
+                  "y": 100,
+                  "fill": "$accent",
+                  "width": 8,
+                  "height": 8
+                },
+                {
+                  "type": "ellipse",
+                  "id": "Vs5l8",
+                  "x": 400,
+                  "y": 250,
+                  "fill": "$text_primary",
+                  "width": 6,
+                  "height": 6
+                },
+                {
+                  "type": "ellipse",
+                  "id": "T0lOS",
+                  "x": 800,
+                  "y": 150,
+                  "fill": "$accent",
+                  "width": 10,
+                  "height": 10
+                },
+                {
+                  "type": "ellipse",
+                  "id": "krXbv",
+                  "x": 1200,
+                  "y": 400,
+                  "fill": "$text_primary",
+                  "width": 6,
+                  "height": 6
+                },
+                {
+                  "type": "ellipse",
+                  "id": "MVjBA",
+                  "x": 300,
+                  "y": 600,
+                  "fill": "$accent",
+                  "width": 8,
+                  "height": 8
+                },
+                {
+                  "type": "ellipse",
+                  "id": "5fcsT",
+                  "x": 900,
+                  "y": 700,
+                  "fill": "$text_primary",
+                  "width": 6,
+                  "height": 6
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "SA9SW",
+              "name": "keyword_label",
+              "fill": "$accent",
+              "content": "CORE FOCUS",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "Medium",
+              "letterSpacing": 4
+            },
+            {
+              "type": "text",
+              "id": "fGpvm",
+              "name": "keyword_text",
+              "fill": "$text_primary",
+              "content": "TECH LOVER",
+              "fontFamily": "Montserrat",
+              "fontSize": 96,
+              "fontWeight": "Extra Bold"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "qRBCD",
+          "name": "Timeline",
+          "width": "fill_container",
+          "height": 1200,
+          "layout": "vertical",
+          "gap": 64,
+          "padding": [
+            120,
+            0
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "akC2N",
+              "fill": "$text_primary",
+              "content": "JOURNEY",
+              "fontFamily": "Montserrat",
+              "fontSize": 48,
+              "fontWeight": "Extra Bold"
+            },
+            {
+              "type": "frame",
+              "id": "IRPK8",
+              "name": "timeline_cont",
+              "width": 1000,
+              "height": 800,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "IAbRG",
+                  "x": 500,
+                  "y": 0,
+                  "opacity": 0.3,
+                  "fill": "$accent",
+                  "width": 2,
+                  "height": 800
+                },
+                {
+                  "type": "frame",
+                  "id": "XGlvT",
+                  "x": 40,
+                  "y": 0,
+                  "name": "Component/Milestone",
+                  "width": 400,
+                  "fill": "$glass_bg",
+                  "cornerRadius": 16,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$glass_border"
+                  },
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "m3qNe7",
+                      "name": "title",
+                      "fill": "$text_primary",
+                      "content": "Fullstack Developer",
+                      "fontFamily": "Montserrat",
+                      "fontSize": 20,
+                      "fontWeight": "Bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "z2OeLd",
+                      "name": "date",
+                      "fill": "$accent",
+                      "content": "2021 - Present",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "JV4KN",
+                      "name": "desc",
+                      "opacity": 0.7,
+                      "fill": "$text_primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Leading development of high-performance web applications using Next.js and Three.js.",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "lN0yh",
+                  "x": 560,
+                  "y": 250,
+                  "name": "Component/Milestone",
+                  "width": 400,
+                  "fill": "$glass_bg",
+                  "cornerRadius": 16,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$glass_border"
+                  },
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "qMQTO",
+                      "name": "title",
+                      "fill": "$text_primary",
+                      "content": "Software Engineer Intern",
+                      "fontFamily": "Montserrat",
+                      "fontSize": 20,
+                      "fontWeight": "Bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "OIohV",
+                      "name": "date",
+                      "fill": "$accent",
+                      "content": "2020 - 2021",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "J8CeXt",
+                      "name": "desc",
+                      "opacity": 0.7,
+                      "fill": "$text_primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Optimized backend microservices and improved frontend load times by 40%.",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "WzdCc",
+                  "x": 40,
+                  "y": 500,
+                  "name": "Component/Milestone",
+                  "width": 400,
+                  "fill": "$glass_bg",
+                  "cornerRadius": 16,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$glass_border"
+                  },
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "a1wUw",
+                      "name": "title",
+                      "fill": "$text_primary",
+                      "content": "B.S. Computer Science",
+                      "fontFamily": "Montserrat",
+                      "fontSize": 20,
+                      "fontWeight": "Bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "tB6oI",
+                      "name": "date",
+                      "fill": "$accent",
+                      "content": "2017 - 2021",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "NOv8C",
+                      "name": "desc",
+                      "opacity": 0.7,
+                      "fill": "$text_primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Specialized in Distributed Systems and Computer Graphics.",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "LcEaI",
+          "name": "Skills",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 64,
+          "padding": 120,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "ZtUcC",
+              "fill": "$text_primary",
+              "content": "EXPERTISE",
+              "fontFamily": "Montserrat",
+              "fontSize": 48,
+              "fontWeight": "Extra Bold"
+            },
+            {
+              "type": "frame",
+              "id": "FXZeA",
+              "name": "skills_grid",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "yaG3U",
+                  "name": "Component/SkillCard",
+                  "width": 320,
+                  "fill": "$glass_bg",
+                  "cornerRadius": 24,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$glass_border"
+                  },
+                  "layout": "vertical",
+                  "gap": 24,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "E4TMc",
+                      "name": "icon",
+                      "width": 32,
+                      "height": 32,
+                      "iconFontName": "layers",
+                      "iconFontFamily": "lucide",
+                      "fill": "$accent"
+                    },
+                    {
+                      "type": "text",
+                      "id": "G0lpu",
+                      "name": "title",
+                      "fill": "$text_primary",
+                      "content": "Fullstack",
+                      "fontFamily": "Montserrat",
+                      "fontSize": 24,
+                      "fontWeight": "Bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "MJH9K",
+                      "name": "list",
+                      "opacity": 0.6,
+                      "fill": "$text_primary",
+                      "content": "- Next.js / React\n- Node.js / Go\n- PostgreSQL / Redis",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "uZ35U",
+                  "name": "Component/SkillCard",
+                  "width": 320,
+                  "fill": "$glass_bg",
+                  "cornerRadius": 24,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$glass_border"
+                  },
+                  "layout": "vertical",
+                  "gap": 24,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "ot6A9",
+                      "name": "icon",
+                      "width": 32,
+                      "height": 32,
+                      "iconFontName": "terminal",
+                      "iconFontFamily": "lucide",
+                      "fill": "$accent"
+                    },
+                    {
+                      "type": "text",
+                      "id": "H2X5n",
+                      "name": "title",
+                      "fill": "$text_primary",
+                      "content": "DevOps",
+                      "fontFamily": "Montserrat",
+                      "fontSize": 24,
+                      "fontWeight": "Bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "T5gen",
+                      "name": "list",
+                      "opacity": 0.6,
+                      "fill": "$text_primary",
+                      "content": "- Docker / K8s\n- AWS / Vercel\n- CI/CD Pipelines",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "cQqiM",
+                  "name": "Component/SkillCard",
+                  "width": 320,
+                  "fill": "$glass_bg",
+                  "cornerRadius": 24,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$glass_border"
+                  },
+                  "layout": "vertical",
+                  "gap": 24,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "JhNR8",
+                      "name": "icon",
+                      "width": 32,
+                      "height": 32,
+                      "iconFontName": "user",
+                      "iconFontFamily": "lucide",
+                      "fill": "$accent"
+                    },
+                    {
+                      "type": "text",
+                      "id": "CeCO9",
+                      "name": "title",
+                      "fill": "$text_primary",
+                      "content": "Softskills",
+                      "fontFamily": "Montserrat",
+                      "fontSize": 24,
+                      "fontWeight": "Bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "W69o9y",
+                      "name": "list",
+                      "opacity": 0.6,
+                      "fill": "$text_primary",
+                      "content": "- Team Leadership\n- Agile / Scrum\n- Mentoring",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "eJVGP",
+          "name": "Projects",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 64,
+          "padding": 120,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "NPKe9",
+              "fill": "$text_primary",
+              "content": "SELECTED WORKS",
+              "fontFamily": "Montserrat",
+              "fontSize": 48,
+              "fontWeight": "Extra Bold"
+            },
+            {
+              "type": "frame",
+              "id": "uMkd7",
+              "name": "projects_grid",
+              "layout": "vertical",
+              "gap": 48,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "KMGwU",
+                  "name": "p_row1",
+                  "gap": 40,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "YOEqE",
+                      "name": "Component/ProjectCard",
+                      "clip": true,
+                      "width": 400,
+                      "fill": "$bg_dark",
+                      "cornerRadius": 16,
+                      "layout": "vertical",
+                      "gap": 20,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "aEEl9",
+                          "name": "image",
+                          "width": "fill_container",
+                          "height": 240,
+                          "fill": "$glass_bg"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "0dHgV",
+                      "name": "Component/ProjectCard",
+                      "clip": true,
+                      "width": 400,
+                      "fill": "$bg_dark",
+                      "cornerRadius": 16,
+                      "layout": "vertical",
+                      "gap": 20,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "pdYXK",
+                          "name": "image",
+                          "width": "fill_container",
+                          "height": 240,
+                          "fill": "$glass_bg"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "CAQDC",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "$bg_dark",
+          "stroke": {
+            "thickness": {
+              "top": 1
+            },
+            "fill": "$glass_border"
+          },
+          "layout": "vertical",
+          "gap": 40,
+          "padding": [
+            80,
+            120
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "Zl1jl",
+              "fill": "$text_primary",
+              "content": "LET'S BUILD SOMETHING EXTRAORDINARY",
+              "textAlign": "center",
+              "fontFamily": "Montserrat",
+              "fontSize": 32,
+              "fontWeight": "Extra Bold"
+            },
+            {
+              "type": "frame",
+              "id": "SaxEM",
+              "name": "socials_f",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "NXohK",
+                  "width": 32,
+                  "height": 32,
+                  "iconFontName": "github",
+                  "iconFontFamily": "lucide",
+                  "fill": "$text_primary"
+                },
+                {
+                  "type": "icon_font",
+                  "id": "0V1gr",
+                  "width": 32,
+                  "height": 32,
+                  "iconFontName": "linkedin",
+                  "iconFontFamily": "lucide",
+                  "fill": "$text_primary"
+                },
+                {
+                  "type": "icon_font",
+                  "id": "KjIrm",
+                  "width": 32,
+                  "height": 32,
+                  "iconFontName": "twitter",
+                  "iconFontFamily": "lucide",
+                  "fill": "$text_primary"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "Q9DBV",
+              "opacity": 0.4,
+              "fill": "$text_primary",
+              "content": "© 2024 EOBRYAN. All rights reserved.",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "CjKGm",
+      "x": 1540,
+      "y": 0,
+      "name": "Mobile - 390px",
+      "width": 390,
+      "fill": "$bg_dark",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "SIrLh",
+          "name": "Hero",
+          "width": "fill_container",
+          "height": 800,
+          "layout": "vertical",
+          "gap": 40,
+          "padding": 20,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "nH0PK",
+              "name": "nav_m",
+              "width": "fill_container",
+              "height": 80,
+              "padding": [
+                0,
+                20
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "YP0Kr",
+                  "fill": "$text_primary",
+                  "content": "EB",
+                  "fontFamily": "Montserrat",
+                  "fontSize": 24,
+                  "fontWeight": "Extra Bold"
+                },
+                {
+                  "type": "icon_font",
+                  "id": "qq808",
+                  "width": 24,
+                  "height": 24,
+                  "iconFontName": "menu",
+                  "iconFontFamily": "lucide",
+                  "fill": "$text_primary"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "E1ww5",
+              "name": "hero_text_cont_m",
+              "layout": "vertical",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "knUfD",
+                  "name": "3D_Placeholder",
+                  "width": 280,
+                  "height": 280,
+                  "fill": "$glass_bg",
+                  "cornerRadius": 140,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$glass_border"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "hyZiB",
+                      "opacity": 0.5,
+                      "fill": "$accent",
+                      "content": "3D MODEL CANVAS",
+                      "textAlign": "center",
+                      "textAlignVertical": "middle",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "4of8b",
+                  "fill": "$text_primary",
+                  "content": "FULLSTACK\nENGINEER",
+                  "lineHeight": 1.1,
+                  "textAlign": "center",
+                  "fontFamily": "$font_family_title",
+                  "fontSize": 48,
+                  "fontWeight": "Extra Bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "JbThP",
+          "name": "Sticky Keywords",
+          "width": "fill_container",
+          "height": 600,
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            0,
+            20
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "jVBjR",
+              "fill": "$accent",
+              "content": "CORE FOCUS",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "Medium",
+              "letterSpacing": 4
+            },
+            {
+              "type": "text",
+              "id": "qpO7i",
+              "fill": "$text_primary",
+              "content": "TECH LOVER",
+              "textAlign": "center",
+              "fontFamily": "Montserrat",
+              "fontSize": 48,
+              "fontWeight": "Extra Bold"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "tpexo",
+          "name": "Timeline",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": [
+            80,
+            20
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "URLgz",
+              "fill": "$text_primary",
+              "content": "JOURNEY",
+              "fontFamily": "Montserrat",
+              "fontSize": 32,
+              "fontWeight": "Extra Bold"
+            },
+            {
+              "type": "frame",
+              "id": "4G3uq",
+              "name": "timeline_cont_m",
+              "width": "fill_container",
+              "height": 1100,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "p101m",
+                  "x": 10,
+                  "y": 0,
+                  "opacity": 0.3,
+                  "fill": "$accent",
+                  "width": 2,
+                  "height": 1100
+                },
+                {
+                  "type": "frame",
+                  "id": "2KJr3",
+                  "x": 40,
+                  "y": 0,
+                  "name": "Component/Milestone",
+                  "width": 310,
+                  "fill": "$glass_bg",
+                  "cornerRadius": 16,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$glass_border"
+                  },
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "jBaZc",
+                      "name": "title",
+                      "fill": "$text_primary",
+                      "content": "Fullstack Developer",
+                      "fontFamily": "Montserrat",
+                      "fontSize": 20,
+                      "fontWeight": "Bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "iQz2L",
+                      "name": "date",
+                      "fill": "$accent",
+                      "content": "2021 - Present",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "n8Btm",
+                      "name": "desc",
+                      "opacity": 0.7,
+                      "fill": "$text_primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Leading development of high-performance web applications.",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "cx9P9",
+                  "x": 40,
+                  "y": 350,
+                  "name": "Component/Milestone",
+                  "width": 310,
+                  "fill": "$glass_bg",
+                  "cornerRadius": 16,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$glass_border"
+                  },
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "EdTZc",
+                      "name": "title",
+                      "fill": "$text_primary",
+                      "content": "Software Engineer Intern",
+                      "fontFamily": "Montserrat",
+                      "fontSize": 20,
+                      "fontWeight": "Bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "wvhAb",
+                      "name": "date",
+                      "fill": "$accent",
+                      "content": "2020 - 2021",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "w00SSJ",
+                      "name": "desc",
+                      "opacity": 0.7,
+                      "fill": "$text_primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Optimized backend microservices and improved frontend load times.",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "iL8SK",
+                  "x": 40,
+                  "y": 700,
+                  "name": "Component/Milestone",
+                  "width": 310,
+                  "fill": "$glass_bg",
+                  "cornerRadius": 16,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$glass_border"
+                  },
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "OFpUv",
+                      "name": "title",
+                      "fill": "$text_primary",
+                      "content": "B.S. Computer Science",
+                      "fontFamily": "Montserrat",
+                      "fontSize": 20,
+                      "fontWeight": "Bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "N5ksl",
+                      "name": "date",
+                      "fill": "$accent",
+                      "content": "2017 - 2021",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "QdHCo",
+                      "name": "desc",
+                      "opacity": 0.7,
+                      "fill": "$text_primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Specialized in Distributed Systems.",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "zyK00",
+          "name": "Skills",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": [
+            80,
+            20
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "gjQF8",
+              "fill": "$text_primary",
+              "content": "EXPERTISE",
+              "fontFamily": "Montserrat",
+              "fontSize": 32,
+              "fontWeight": "Extra Bold"
+            },
+            {
+              "type": "frame",
+              "id": "ZAH8m",
+              "name": "Component/SkillCard",
+              "width": 350,
+              "fill": "$glass_bg",
+              "cornerRadius": 24,
+              "stroke": {
+                "thickness": 1,
+                "fill": "$glass_border"
+              },
+              "layout": "vertical",
+              "gap": 24,
+              "padding": 32,
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "XCl8c",
+                  "name": "icon",
+                  "width": 32,
+                  "height": 32,
+                  "iconFontName": "code",
+                  "iconFontFamily": "lucide",
+                  "fill": "$accent"
+                },
+                {
+                  "type": "text",
+                  "id": "e1eGno",
+                  "name": "title",
+                  "fill": "$text_primary",
+                  "content": "Fullstack",
+                  "fontFamily": "Montserrat",
+                  "fontSize": 24,
+                  "fontWeight": "Bold"
+                },
+                {
+                  "type": "text",
+                  "id": "DiDhj",
+                  "name": "list",
+                  "opacity": 0.6,
+                  "fill": "$text_primary",
+                  "content": "- React\n- Node.js\n- TypeScript",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "miRlG",
+              "name": "Component/SkillCard",
+              "width": 350,
+              "fill": "$glass_bg",
+              "cornerRadius": 24,
+              "stroke": {
+                "thickness": 1,
+                "fill": "$glass_border"
+              },
+              "layout": "vertical",
+              "gap": 24,
+              "padding": 32,
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "QQf6X",
+                  "name": "icon",
+                  "width": 32,
+                  "height": 32,
+                  "iconFontName": "code",
+                  "iconFontFamily": "lucide",
+                  "fill": "$accent"
+                },
+                {
+                  "type": "text",
+                  "id": "k00JU",
+                  "name": "title",
+                  "fill": "$text_primary",
+                  "content": "DevOps",
+                  "fontFamily": "Montserrat",
+                  "fontSize": 24,
+                  "fontWeight": "Bold"
+                },
+                {
+                  "type": "text",
+                  "id": "c3vvX",
+                  "name": "list",
+                  "opacity": 0.6,
+                  "fill": "$text_primary",
+                  "content": "- React\n- Node.js\n- TypeScript",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "fxyRP",
+          "name": "Projects",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": [
+            80,
+            20
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "3jh9R",
+              "fill": "$text_primary",
+              "content": "WORKS",
+              "fontFamily": "Montserrat",
+              "fontSize": 32,
+              "fontWeight": "Extra Bold"
+            },
+            {
+              "type": "frame",
+              "id": "Hcf55",
+              "name": "Component/ProjectCard",
+              "clip": true,
+              "width": 350,
+              "fill": "$bg_dark",
+              "cornerRadius": 16,
+              "layout": "vertical",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "SSOqx",
+                  "name": "image",
+                  "width": "fill_container",
+                  "height": 240,
+                  "fill": "$glass_bg"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "gRkAB",
+              "name": "Component/ProjectCard",
+              "clip": true,
+              "width": 350,
+              "fill": "$bg_dark",
+              "cornerRadius": 16,
+              "layout": "vertical",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "xIMgR",
+                  "name": "image",
+                  "width": "fill_container",
+                  "height": 240,
+                  "fill": "$glass_bg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "RL7IJ",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "$bg_dark",
+          "stroke": {
+            "thickness": {
+              "top": 1
+            },
+            "fill": "$glass_border"
+          },
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            60,
+            20
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "PhH9q",
+              "fill": "$text_primary",
+              "content": "LET'S BUILD",
+              "fontFamily": "Montserrat",
+              "fontSize": 24,
+              "fontWeight": "Extra Bold"
+            },
+            {
+              "type": "frame",
+              "id": "RKT8H",
+              "name": "socials_fm",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "ESomj",
+                  "width": 24,
+                  "height": 24,
+                  "iconFontName": "github",
+                  "iconFontFamily": "lucide",
+                  "fill": "$text_primary"
+                },
+                {
+                  "type": "icon_font",
+                  "id": "G8LFq",
+                  "width": 24,
+                  "height": 24,
+                  "iconFontName": "linkedin",
+                  "iconFontFamily": "lucide",
+                  "fill": "$text_primary"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "petyR",
+      "x": 0,
+      "y": 0,
+      "name": "Component/Navbar",
+      "reusable": true,
+      "width": "fill_container(0)",
+      "height": 80,
+      "padding": [
+        20,
+        120
+      ],
+      "justifyContent": "space_between",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "text",
+          "id": "BHiEw",
+          "name": "logo",
+          "fill": "$text_primary",
+          "content": "EOBRYANDEV",
+          "fontFamily": "Montserrat",
+          "fontSize": 24,
+          "fontWeight": "Extra Bold"
+        },
+        {
+          "type": "frame",
+          "id": "KTVlQ",
+          "gap": 24,
+          "children": [
+            {
+              "type": "icon_font",
+              "id": "oJERz",
+              "width": 24,
+              "height": 24,
+              "iconFontName": "github",
+              "iconFontFamily": "lucide",
+              "fill": "$text_primary"
+            },
+            {
+              "type": "icon_font",
+              "id": "zoIAE",
+              "width": 24,
+              "height": 24,
+              "iconFontName": "linkedin",
+              "iconFontFamily": "lucide",
+              "fill": "$text_primary"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Fc0st",
+      "x": 474,
+      "y": 200,
+      "name": "3D_Placeholder",
+      "width": 492,
+      "height": 492,
+      "fill": "$glass_bg",
+      "cornerRadius": 200,
+      "stroke": {
+        "thickness": 1,
+        "fill": "$glass_border"
+      },
+      "effect": [
+        {
+          "type": "shadow",
+          "shadowType": "outer",
+          "color": "#00000040",
+          "offset": {
+            "x": 0,
+            "y": 4
+          },
+          "blur": 4
+        },
+        {
+          "type": "shadow",
+          "shadowType": "outer",
+          "color": "#00000040",
+          "offset": {
+            "x": 0,
+            "y": 4
+          },
+          "blur": 4
+        }
+      ],
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    {
+      "type": "frame",
+      "id": "xyMsX",
+      "x": -1513,
+      "y": 937,
+      "name": "Sticky Keywords",
+      "width": "fill_container(1440)",
+      "height": 800,
+      "fill": "$bg_dark",
+      "layout": "vertical",
+      "gap": 24,
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "ZHeRP",
+          "layoutPosition": "absolute",
+          "x": 0,
+          "y": 0,
+          "name": "particle_bg",
+          "opacity": 0.3,
+          "width": "fill_container(0)",
+          "height": "fill_container(0)",
+          "layout": "none",
+          "children": [
+            {
+              "type": "ellipse",
+              "id": "HcaqU",
+              "x": 100,
+              "y": 100,
+              "fill": "$accent",
+              "width": 8,
+              "height": 8
+            },
+            {
+              "type": "ellipse",
+              "id": "V0Zwt",
+              "x": 400,
+              "y": 250,
+              "fill": "$text_primary",
+              "width": 6,
+              "height": 6
+            },
+            {
+              "type": "ellipse",
+              "id": "OXkr5",
+              "x": 800,
+              "y": 150,
+              "fill": "$accent",
+              "width": 10,
+              "height": 10
+            },
+            {
+              "type": "ellipse",
+              "id": "EdeF0",
+              "x": 1200,
+              "y": 400,
+              "fill": "$text_primary",
+              "width": 6,
+              "height": 6
+            },
+            {
+              "type": "ellipse",
+              "id": "kcgLT",
+              "x": 300,
+              "y": 600,
+              "fill": "$accent",
+              "width": 8,
+              "height": 8
+            },
+            {
+              "type": "ellipse",
+              "id": "Ba3El",
+              "x": 900,
+              "y": 700,
+              "fill": "$text_primary",
+              "width": 6,
+              "height": 6
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "WwxeC",
+          "name": "keyword_label",
+          "fill": "$accent",
+          "content": "CORE FOCUS",
+          "fontFamily": "Inter",
+          "fontSize": 16,
+          "fontWeight": "Medium",
+          "letterSpacing": 4
+        },
+        {
+          "type": "text",
+          "id": "TxgD9",
+          "name": "keyword_text",
+          "fill": "$text_primary",
+          "content": "PLUVIOPHILO",
+          "fontFamily": "Montserrat",
+          "fontSize": 96,
+          "fontWeight": "Extra Bold"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Kg5O0",
+      "x": -3060,
+      "y": 937,
+      "name": "Sticky Keywords",
+      "width": "fill_container(1440)",
+      "height": 800,
+      "fill": "$bg_dark",
+      "layout": "vertical",
+      "gap": 24,
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "j3H6S",
+          "layoutPosition": "absolute",
+          "x": 0,
+          "y": 0,
+          "name": "particle_bg",
+          "opacity": 0.3,
+          "width": "fill_container(0)",
+          "height": "fill_container(0)",
+          "layout": "none",
+          "children": [
+            {
+              "type": "ellipse",
+              "id": "exUBw",
+              "x": 100,
+              "y": 100,
+              "fill": "$accent",
+              "width": 8,
+              "height": 8
+            },
+            {
+              "type": "ellipse",
+              "id": "upxvH",
+              "x": 400,
+              "y": 250,
+              "fill": "$text_primary",
+              "width": 6,
+              "height": 6
+            },
+            {
+              "type": "ellipse",
+              "id": "jsVpV",
+              "x": 800,
+              "y": 150,
+              "fill": "$accent",
+              "width": 10,
+              "height": 10
+            },
+            {
+              "type": "ellipse",
+              "id": "MpHGH",
+              "x": 1200,
+              "y": 400,
+              "fill": "$text_primary",
+              "width": 6,
+              "height": 6
+            },
+            {
+              "type": "ellipse",
+              "id": "aPvay",
+              "x": 300,
+              "y": 600,
+              "fill": "$accent",
+              "width": 8,
+              "height": 8
+            },
+            {
+              "type": "ellipse",
+              "id": "Waxpw",
+              "x": 900,
+              "y": 700,
+              "fill": "$text_primary",
+              "width": 6,
+              "height": 6
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "ZCh2C",
+          "name": "keyword_label",
+          "fill": "$accent",
+          "content": "CORE FOCUS",
+          "fontFamily": "Inter",
+          "fontSize": 16,
+          "fontWeight": "Medium",
+          "letterSpacing": 4
+        },
+        {
+          "type": "text",
+          "id": "UTwPi",
+          "name": "keyword_text",
+          "fill": "$text_primary",
+          "content": "LIFE LONG LEANER",
+          "fontFamily": "Montserrat",
+          "fontSize": 96,
+          "fontWeight": "Extra Bold"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "JZK4h",
+      "x": 1966,
+      "y": 795,
+      "name": "Sticky Keywords",
+      "width": "fill_container(390)",
+      "height": 600,
+      "fill": "$bg_dark",
+      "layout": "vertical",
+      "gap": 16,
+      "padding": [
+        0,
+        20
+      ],
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "text",
+          "id": "V5Ug4",
+          "fill": "$accent",
+          "content": "CORE FOCUS",
+          "fontFamily": "Inter",
+          "fontSize": 12,
+          "fontWeight": "Medium",
+          "letterSpacing": 4
+        },
+        {
+          "type": "text",
+          "id": "Da9yw",
+          "fill": "$text_primary",
+          "content": "PLUVIOPHILO",
+          "textAlign": "center",
+          "fontFamily": "Montserrat",
+          "fontSize": 48,
+          "fontWeight": "Extra Bold"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "GMEOn",
+      "x": 2409,
+      "y": 795,
+      "name": "Sticky Keywords",
+      "width": "fill_container(390)",
+      "height": 600,
+      "fill": "$bg_dark",
+      "layout": "vertical",
+      "gap": 16,
+      "padding": [
+        0,
+        20
+      ],
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "text",
+          "id": "QkFv4",
+          "fill": "$accent",
+          "content": "CORE FOCUS",
+          "fontFamily": "Inter",
+          "fontSize": 12,
+          "fontWeight": "Medium",
+          "letterSpacing": 4
+        },
+        {
+          "type": "text",
+          "id": "WCtX5",
+          "fill": "$text_primary",
+          "content": "L. L. LEARNER",
+          "textAlign": "center",
+          "fontFamily": "Montserrat",
+          "fontSize": 48,
+          "fontWeight": "Extra Bold"
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "accent": {
+      "type": "color",
+      "value": "#318CE7"
+    },
+    "bg_dark": {
+      "type": "color",
+      "value": "#121212"
+    },
+    "bg_light_alt": {
+      "type": "color",
+      "value": "#E5E5E5"
+    },
+    "font_family_body": {
+      "type": "string",
+      "value": "Inter"
+    },
+    "font_family_title": {
+      "type": "string",
+      "value": "Montserrat"
+    },
+    "glass_bg": {
+      "type": "color",
+      "value": "#FFFFFF08"
+    },
+    "glass_border": {
+      "type": "color",
+      "value": "#FFFFFF1A"
+    },
+    "space_1": {
+      "type": "number",
+      "value": 4
+    },
+    "space_16": {
+      "type": "number",
+      "value": 64
+    },
+    "space_2": {
+      "type": "number",
+      "value": 8
+    },
+    "space_24": {
+      "type": "number",
+      "value": 96
+    },
+    "space_4": {
+      "type": "number",
+      "value": 16
+    },
+    "space_8": {
+      "type": "number",
+      "value": 32
+    },
+    "text_primary": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "text_secondary": {
+      "type": "color",
+      "value": "#1A1A1A"
+    }
+  }
+}
