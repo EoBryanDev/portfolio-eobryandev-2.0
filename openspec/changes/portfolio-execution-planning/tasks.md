@@ -12,9 +12,9 @@
 
 ## 3. Hero Section (3D & Animations)
 
-- [ ] 3.1 Implement base Hero component layout and typography
-- [ ] 3.2 Integrate async 3D Spline component (using `next/dynamic`) with loading placeholder
-- [ ] 3.3 Add GSAP entrance animations for Hero text, buttons, and 3D container
+- [x] 3.1 Implement base Hero component layout and typography
+- [x] 3.2 Integrate async 3D Spline component (using `next/dynamic`) with loading placeholder
+- [x] 3.3 Add GSAP entrance animations for Hero text, buttons, and 3D container
 
 ## 4. Content Sections
 

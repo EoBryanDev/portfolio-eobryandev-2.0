@@ -7,5 +7,3 @@ vi.mock('next/link', () => ({
     return React.createElement('a', rest, children);
   },
 }));
-
-
