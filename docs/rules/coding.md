@@ -31,3 +31,8 @@
 ## Package Management
 
 - Always use pnpm for package management
+
+## Icons
+
+- Use `lucide-react` for standard UI icons.
+- If an icon (like a brand icon) is not available in `lucide-react` (e.g., GitHub, LinkedIn, etc.), use `react-icons` instead of creating custom SVGs.
