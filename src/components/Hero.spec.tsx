@@ -34,9 +34,7 @@ describe('Hero', () => {
   it('renders the headline and description', () => {
     render(<Hero />);
 
-    expect(screen.getByText(/Engineering/i)).toBeDefined();
-    expect(screen.getByText(/Digital/i)).toBeDefined();
-    expect(screen.getByText(/Experiences/i)).toBeDefined();
+    expect(screen.getByText(/EoBryan/i)).toBeDefined();
     expect(
       screen.getByText(/I build high-performance web applications/i),
     ).toBeDefined();

@@ -10,7 +10,7 @@ import { useRef } from 'react';
 const Spline = dynamic(() => import('@splinetool/react-spline'), {
   ssr: false,
   loading: () => (
-    <div className="w-full h-full flex items-center justify-center bg-white/5 rounded-2xl border border-white/10 animate-pulse">
+    <div className="w-full h-full flex items-center justify-center rounded-2xl animate-pulse">
       <div className="text-neutral-500 text-sm">Loading 3D Experience...</div>
     </div>
   ),
@@ -38,9 +38,9 @@ export function Hero() {
       if (splineContainer.current) {
         tl.fromTo(
           splineContainer.current,
-          { scale: 0.9, opacity: 0 },
-          { scale: 1, opacity: 1, duration: 1.5 },
-          '-=0.5',
+          { scale: 0.8, opacity: 0, y: 50 },
+          { scale: 1, opacity: 1, y: 0, duration: 1.5 },
+          '-=0.8',
         );
       }
     },
@@ -52,30 +52,29 @@ export function Hero() {
       ref={container}
       className="relative min-h-[calc(100vh-80px)] flex items-center justify-center pt-24 pb-12 overflow-hidden"
     >
-      <div className="container mx-auto px-6">
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-8">
+      <div className="container mx-auto px-6 relative">
+        <div className="flex flex-col items-center justify-center relative min-h-[500px]">
           {/* Text Content */}
           <div
             ref={textContainer}
-            className="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left z-10"
+            className="flex flex-col items-center text-center z-10 w-full"
           >
-            <div className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-sm font-medium text-neutral-300 backdrop-blur-sm mb-6">
+            <div className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-sm font-medium text-neutral-300 backdrop-blur-sm mb-8 z-30 relative">
               <span className="flex h-2 w-2 rounded-full bg-emerald-500 mr-2 animate-pulse" />
-              Available for new opportunities
+              Interior de São Paulo, Brasil.
             </div>
 
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
-              Engineering <br className="hidden lg:block" />
-              <span className="text-neutral-400">Digital</span> Experiences.
+            <h1 className="text-[15vw] md:text-9xl lg:text-[12rem] font-bold tracking-tighter leading-none mb-6 text-foreground z-10 relative pointer-events-none">
+              EoBryan
             </h1>
 
-            <p className="text-lg text-neutral-400 max-w-xl mb-10 leading-relaxed">
+            <p className="text-lg md:text-xl text-neutral-400 max-w-2xl mb-10 leading-relaxed z-30 relative mt-4">
               I build high-performance web applications focusing on exceptional
               user interfaces, seamless interactions, and robust scalable
               architectures.
             </p>
 
-            <div className="flex flex-col sm:flex-row items-center gap-4">
+            <div className="flex flex-col sm:flex-row items-center gap-4 z-30 relative">
               <Link
                 href="#projects"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-foreground text-background font-medium rounded-lg hover:bg-neutral-300 transition-colors"
@@ -95,13 +94,11 @@ export function Hero() {
           {/* 3D Spline Container */}
           <div
             ref={splineContainer}
-            className="flex-1 w-full h-[400px] md:h-[500px] lg:h-[600px] relative z-0"
+            className="absolute top-[40%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[800px] h-[400px] md:h-[600px] z-20 pointer-events-none"
           >
-            {/* 
-              Using a generic spline scene as placeholder. 
-              Can be replaced with the user's specific Spline URL later. 
-            */}
-            <Spline scene="https://prod.spline.design/6Wq1Q7YGyM-iab9i/scene.splinecode" />
+            <div className="w-full h-full pointer-events-auto">
+              <Spline scene="https://prod.spline.design/6Wq1Q7YGyM-iab9i/scene.splinecode" />
+            </div>
           </div>
         </div>
       </div>
