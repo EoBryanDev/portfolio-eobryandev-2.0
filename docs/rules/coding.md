@@ -27,3 +27,7 @@
 - **OOP:** Mandatory for Core Business Objects, Services, and Domain Models.
 - **ESLint:** Airbnb Base + React rules.
 - **Formatting:** Alphabetical import sorting and Tailwind CSS class sorting (Prettier plugin).
+
+## Package Management
+
+- Always use pnpm for package management
