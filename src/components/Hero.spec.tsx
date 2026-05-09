@@ -7,7 +7,10 @@ vi.mock('gsap', () => {
   const gsap = {
     timeline: () => ({
       fromTo: vi.fn().mockReturnThis(),
+      to: vi.fn().mockReturnThis(),
     }),
+    fromTo: vi.fn(),
+    to: vi.fn(),
   };
   return { default: gsap };
 });
@@ -31,20 +34,11 @@ vi.mock('next/dynamic', () => ({
 }));
 
 describe('Hero', () => {
-  it('renders the headline and description', () => {
+  it('renders the marquee headline', () => {
     render(<Hero />);
 
-    expect(screen.getByText(/EoBryan/i)).toBeDefined();
-    expect(
-      screen.getByText(/I build high-performance web applications/i),
-    ).toBeDefined();
-  });
-
-  it('renders the call-to-action buttons', () => {
-    render(<Hero />);
-
-    expect(screen.getByText(/View Projects/i)).toBeDefined();
-    expect(screen.getByText(/Contact Me/i)).toBeDefined();
+    const elements = screen.getAllByText(/MAURICIO BRYAN DE ANDRADE VIANA/i);
+    expect(elements.length).toBeGreaterThan(0);
   });
 
   it('renders the Spline component mock', () => {
