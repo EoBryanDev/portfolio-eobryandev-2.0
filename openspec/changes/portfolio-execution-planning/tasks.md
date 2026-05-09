@@ -6,9 +6,9 @@
 
 ## 2. Core Layout
 
-- [ ] 2.1 Create base layout structure with dark theme enforcement
-- [ ] 2.2 Build global Navigation/Header
-- [ ] 2.3 Build Conversion Footer with social links (LinkedIn, GitHub) and CTA (No Resume PDF)
+- [x] 2.1 Create base layout structure with dark theme enforcement
+- [x] 2.2 Build global Navigation/Header
+- [x] 2.3 Build Conversion Footer with social links (LinkedIn, GitHub) and CTA (No Resume PDF)
 
 ## 3. Hero Section (3D & Animations)
 
