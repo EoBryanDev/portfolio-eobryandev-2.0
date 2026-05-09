@@ -10,7 +10,7 @@ Engenheiros de software fullstack precisam de uma plataforma que vá além do cu
 - Implementação de um Vertical Timeline destacando formação e carreira.
 - Criação de um Project Grid interativo com descrições técnicas, links do GitHub e Live Demo.
 - Integração de um Footer de Conversão com links do LinkedIn/GitHub e contato direto (sem download de currículo PDF).
-- Otimização de Performance e SEO visando score > 90 no Google Lighthouse, usando Next.js com deploy na Vercel.
+- Otimização de Performance e SEO visando score > 90 no Google Lighthouse, usando Next.js, preparado para deploy flexível (VPS, Edge networks, etc).
 
 ## Capabilities
 
@@ -28,4 +28,4 @@ Engenheiros de software fullstack precisam de uma plataforma que vá além do cu
 
 - **Frontend Architecture**: Criação da estrutura de rotas (Next.js App Router), layouts globais e componentes base.
 - **Dependencies**: Introdução de bibliotecas pesadas de animação e 3D (Three.js/Spline, GSAP) que exigirão carregamento lazy e otimização.
-- **Deployment**: Configuração de deploy em Edge network (Vercel) para garantir performance.
+- **Deployment**: Configuração flexível de pipeline para suportar ambientes variados (VPS, provedores Edge, etc), mantendo o foco em otimização de entrega e performance.

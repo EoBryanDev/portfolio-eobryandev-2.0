@@ -1,8 +1,8 @@
 ## 1. Setup and Infrastructure
 
-- [ ] 1.1 Initialize Next.js App Router project and configure Tailwind CSS
-- [ ] 1.2 Setup global CSS for Strict Dark Theme design tokens
-- [ ] 1.3 Install and configure dependencies: GSAP, @gsap/react, @splinetool/react-spline, lucide-react
+- [x] 1.1 Initialize Next.js App Router project and configure Tailwind CSS
+- [x] 1.2 Setup global CSS for Strict Dark Theme design tokens
+- [x] 1.3 Install and configure dependencies: GSAP, @gsap/react, @splinetool/react-spline, lucide-react
 
 ## 2. Core Layout
 
