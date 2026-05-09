@@ -16,7 +16,7 @@ Engenheiros de software precisam de um portfólio que não seja apenas um docume
 
 ## Decisions
 
-- **Framework**: Next.js App Router. Escolhido para aproveitar Server Components, otimização automática de imagens e facilidade de deploy na Vercel (Edge Network).
+- **Framework**: Next.js App Router. Escolhido para aproveitar Server Components e otimização automática de imagens (com deploy flexível para VPS, Vercel ou outras plataformas).
 - **Styling**: Tailwind CSS combinado com CSS Vanilla. Isso permite um desenvolvimento rápido do "Strict Dark Mode" usando design tokens definidos globalmente e integração fácil com GSAP.
 - **Animações**: GSAP (GreenSock) com ScrollTrigger. Fornece controle fino sobre timelines complexas e animações baseadas em scroll, superior ao Framer Motion para este caso de uso específico de alta performance.
 - **3D Engine**: @splinetool/react-spline (Spline). Permite a importação rápida de cenas 3D interativas exportadas diretamente do Spline. Alternativa (Three.js/React Three Fiber) foi descartada temporariamente para focar na rapidez de entrega do 3D, mas permanece como fallback se a performance for insuficiente.
@@ -32,4 +32,4 @@ Engenheiros de software precisam de um portfólio que não seja apenas um docume
 
 ## Migration Plan
 
-N/A - Novo Projeto. Deploy automatizado configurado via GitHub -> Vercel.
+N/A - Novo Projeto. Deploy automatizado configurado via GitHub Actions/CI (VPS, Vercel ou similar).
