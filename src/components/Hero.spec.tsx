@@ -7,7 +7,10 @@ vi.mock('gsap', () => {
   const gsap = {
     timeline: () => ({
       fromTo: vi.fn().mockReturnThis(),
+      to: vi.fn().mockReturnThis(),
     }),
+    fromTo: vi.fn(),
+    to: vi.fn(),
   };
   return { default: gsap };
 });
@@ -20,38 +23,18 @@ vi.mock('@gsap/react', () => ({
   },
 }));
 
-// Mock next/dynamic
-vi.mock('next/dynamic', () => ({
-  default: () => {
-    const MockSpline = () => (
-      <div data-testid="spline-mock">Spline Component</div>
-    );
-    return MockSpline;
-  },
-}));
-
 describe('Hero', () => {
-  it('renders the headline and description', () => {
+  it('renders the marquee headline', () => {
     render(<Hero />);
 
-    expect(screen.getByText(/Engineering/i)).toBeDefined();
-    expect(screen.getByText(/Digital/i)).toBeDefined();
-    expect(screen.getByText(/Experiences/i)).toBeDefined();
-    expect(
-      screen.getByText(/I build high-performance web applications/i),
-    ).toBeDefined();
+    const elements = screen.getAllByText(/MAURICIO BRYAN DE ANDRADE VIANA/i);
+    expect(elements.length).toBeGreaterThan(0);
   });
 
-  it('renders the call-to-action buttons', () => {
+  it('renders the location badge and image placeholder', () => {
     render(<Hero />);
 
-    expect(screen.getByText(/View Projects/i)).toBeDefined();
-    expect(screen.getByText(/Contact Me/i)).toBeDefined();
-  });
-
-  it('renders the Spline component mock', () => {
-    render(<Hero />);
-
-    expect(screen.getByTestId('spline-mock')).toBeDefined();
+    expect(screen.getByText('Interior de São Paulo, Brasil.')).toBeDefined();
+    expect(screen.getByText('Image Placeholder')).toBeDefined();
   });
 });
