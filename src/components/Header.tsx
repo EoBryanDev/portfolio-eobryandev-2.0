@@ -11,31 +11,31 @@ export function Header() {
     <header className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-white/10">
       <div className="container mx-auto px-6 h-16 flex items-center justify-between">
         <Link href="/" className="text-xl font-bold tracking-tighter z-50">
-          EoBryanDev<span className="text-blue-500">.</span>
+          EoBryanDev<span className="text-primary">.</span>
         </Link>
 
         <nav className="hidden md:flex gap-8 text-sm font-medium">
           <Link
             href="#tech-stack"
-            className="hover:text-blue-400 transition-colors"
+            className="hover:text-primary transition-colors"
           >
             Stack
           </Link>
           <Link
             href="#timeline"
-            className="hover:text-blue-400 transition-colors"
+            className="hover:text-primary transition-colors"
           >
             Timeline
           </Link>
           <Link
             href="#projects"
-            className="hover:text-blue-400 transition-colors"
+            className="hover:text-primary transition-colors"
           >
             Projects
           </Link>
           <Link
             href="#contact"
-            className="hover:text-blue-400 transition-colors"
+            className="hover:text-primary transition-colors"
           >
             Contact
           </Link>
@@ -57,28 +57,28 @@ export function Header() {
             <Link
               href="#tech-stack"
               onClick={() => setIsOpen(false)}
-              className="text-2xl font-medium hover:text-blue-400 transition-colors"
+              className="text-2xl font-medium hover:text-primary transition-colors"
             >
               Stack
             </Link>
             <Link
               href="#timeline"
               onClick={() => setIsOpen(false)}
-              className="text-2xl font-medium hover:text-blue-400 transition-colors"
+              className="text-2xl font-medium hover:text-primary transition-colors"
             >
               Timeline
             </Link>
             <Link
               href="#projects"
               onClick={() => setIsOpen(false)}
-              className="text-2xl font-medium hover:text-blue-400 transition-colors"
+              className="text-2xl font-medium hover:text-primary transition-colors"
             >
               Projects
             </Link>
             <Link
               href="#contact"
               onClick={() => setIsOpen(false)}
-              className="text-2xl font-medium hover:text-blue-400 transition-colors"
+              className="text-2xl font-medium hover:text-primary transition-colors"
             >
               Contact
             </Link>

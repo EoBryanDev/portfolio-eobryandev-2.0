@@ -23,16 +23,6 @@ vi.mock('@gsap/react', () => ({
   },
 }));
 
-// Mock next/dynamic
-vi.mock('next/dynamic', () => ({
-  default: () => {
-    const MockSpline = () => (
-      <div data-testid="spline-mock">Spline Component</div>
-    );
-    return MockSpline;
-  },
-}));
-
 describe('Hero', () => {
   it('renders the marquee headline', () => {
     render(<Hero />);
@@ -41,9 +31,10 @@ describe('Hero', () => {
     expect(elements.length).toBeGreaterThan(0);
   });
 
-  it('renders the Spline component mock', () => {
+  it('renders the location badge and image placeholder', () => {
     render(<Hero />);
 
-    expect(screen.getByTestId('spline-mock')).toBeDefined();
+    expect(screen.getByText('Interior de São Paulo, Brasil.')).toBeDefined();
+    expect(screen.getByText('Image Placeholder')).toBeDefined();
   });
 });
