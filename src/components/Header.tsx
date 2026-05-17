@@ -9,7 +9,7 @@ export function Header() {
 
   return (
     <header className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-white/10">
-      <div className="container mx-auto px-6 h-16 flex items-center justify-between">
+      <div className="w-full px-4 md:px-12 h-16 flex items-center justify-between">
         <Link href="/" className="text-xl font-bold tracking-tighter z-50">
           EoBryanDev<span className="text-primary">.</span>
         </Link>
