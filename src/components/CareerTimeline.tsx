@@ -1,5 +1,5 @@
-import React from 'react';
 import { Briefcase, GraduationCap } from 'lucide-react';
+import type React from 'react';
 
 interface ITimelineItem {
   readonly id: string;
@@ -20,7 +20,8 @@ const TIMELINE_ITEMS: readonly ITimelineItem[] = [
     organization: 'Tech Innovations Inc.',
     period: '2024 - Present',
     location: 'Remote',
-    description: 'Spearheaded the architectural migration of core micro-frontends to Next.js App Router, boosting rendering speeds and SEO metrics. Implemented strict custom design token systems and high-performance GSAP animations.',
+    description:
+      'Spearheaded the architectural migration of core micro-frontends to Next.js App Router, boosting rendering speeds and SEO metrics. Implemented strict custom design token systems and high-performance GSAP animations.',
     highlights: ['Next.js App Router', 'TypeScript', 'GSAP', 'Tailwind CSS'],
   },
   {
@@ -30,7 +31,8 @@ const TIMELINE_ITEMS: readonly ITimelineItem[] = [
     organization: 'Digital Solutions Studio',
     period: '2022 - 2024',
     location: 'São Paulo, Brasil',
-    description: 'Architected highly robust internal API infrastructures and real-time dashboard interfaces. Streamlined continuous deployment automation and integrated containerized PostgreSQL database pipelines.',
+    description:
+      'Architected highly robust internal API infrastructures and real-time dashboard interfaces. Streamlined continuous deployment automation and integrated containerized PostgreSQL database pipelines.',
     highlights: ['React', 'Node.js', 'Express', 'PostgreSQL', 'Docker'],
   },
   {
@@ -40,7 +42,8 @@ const TIMELINE_ITEMS: readonly ITimelineItem[] = [
     organization: 'University of São Paulo (USP)',
     period: '2018 - 2022',
     location: 'São Paulo, Brasil',
-    description: 'Graduated with comprehensive focus on distributed systems, advanced algorithm optimization, and software engineering methodologies.',
+    description:
+      'Graduated with comprehensive focus on distributed systems, advanced algorithm optimization, and software engineering methodologies.',
     highlights: ['Distributed Systems', 'Algorithms', 'System Architecture'],
   },
 ];
@@ -54,7 +57,8 @@ export function CareerTimeline(): React.JSX.Element {
             Career Timeline &amp; Education
           </h2>
           <p className="text-neutral-400 max-w-2xl mx-auto text-base">
-            A chronological journey through high-impact professional engineering roles and rigorous foundational academic milestones.
+            A chronological journey through high-impact professional engineering
+            roles and rigorous foundational academic milestones.
           </p>
         </div>
 
@@ -108,7 +112,7 @@ export function CareerTimeline(): React.JSX.Element {
                       </p>
 
                       <div className="flex flex-wrap gap-2">
-                        {item.highlights.map(highlight => (
+                        {item.highlights.map((highlight) => (
                           <span
                             key={highlight}
                             className="text-xs px-2.5 py-1 rounded-md bg-white/5 border border-white/5 text-neutral-300 font-medium"

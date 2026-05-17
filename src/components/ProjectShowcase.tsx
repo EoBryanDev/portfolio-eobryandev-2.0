@@ -1,6 +1,6 @@
-import React from 'react';
 import { ExternalLink, FolderGit2 } from 'lucide-react';
 import Link from 'next/link';
+import type React from 'react';
 import { FaGithub } from 'react-icons/fa';
 
 interface IProjectItem {
@@ -17,8 +17,15 @@ const PROJECT_ITEMS: readonly IProjectItem[] = [
   {
     id: 'project-synit',
     title: 'Synit Core Platform',
-    description: 'High-throughput enterprise tenancy application with strict Postgres Row Level Security (RLS) isolation and Next.js server actions. Architected custom Cloudflare R2 image asset load balancers.',
-    tags: ['Next.js', 'TypeScript', 'PostgreSQL', 'Drizzle ORM', 'Cloudflare R2'],
+    description:
+      'High-throughput enterprise tenancy application with strict Postgres Row Level Security (RLS) isolation and Next.js server actions. Architected custom Cloudflare R2 image asset load balancers.',
+    tags: [
+      'Next.js',
+      'TypeScript',
+      'PostgreSQL',
+      'Drizzle ORM',
+      'Cloudflare R2',
+    ],
     githubUrl: 'https://github.com/',
     liveUrl: 'https://example.com/',
     isFeatured: true,
@@ -26,7 +33,8 @@ const PROJECT_ITEMS: readonly IProjectItem[] = [
   {
     id: 'project-aesthetic',
     title: 'CyberAesthetic Portfolio Engine',
-    description: 'Ultra-optimized developer showcase framework achieving >90 Lighthouse benchmarks. Integrates seamless infinite horizontal marquees, custom GSAP pinning mechanics, and ambient background state management.',
+    description:
+      'Ultra-optimized developer showcase framework achieving >90 Lighthouse benchmarks. Integrates seamless infinite horizontal marquees, custom GSAP pinning mechanics, and ambient background state management.',
     tags: ['React', 'GSAP', 'Tailwind CSS', 'Spline 3D'],
     githubUrl: 'https://github.com/',
     liveUrl: 'https://example.com/',
@@ -35,14 +43,16 @@ const PROJECT_ITEMS: readonly IProjectItem[] = [
   {
     id: 'project-plsql',
     title: 'PL/SQL Distributed Synchronizer',
-    description: 'Normalized data synchronization engine orchestrating updates across separate enterprise schemas. Optimized query footprints and implemented thorough audit logging traces for high integrity.',
+    description:
+      'Normalized data synchronization engine orchestrating updates across separate enterprise schemas. Optimized query footprints and implemented thorough audit logging traces for high integrity.',
     tags: ['Oracle PL/SQL', 'Database Architecture', 'Performance Tuning'],
     githubUrl: 'https://github.com/',
   },
   {
     id: 'project-mcp',
     title: 'Context7 Core Agent Integration',
-    description: 'Model Context Protocol (MCP) server implementation enabling secure automated documentation fetches, dynamic sandboxed compilation testing, and secure repository indexing.',
+    description:
+      'Model Context Protocol (MCP) server implementation enabling secure automated documentation fetches, dynamic sandboxed compilation testing, and secure repository indexing.',
     tags: ['MCP Server', 'Agentic AI', 'Node.js', 'System Architecture'],
     githubUrl: 'https://github.com/',
     liveUrl: 'https://example.com/',
@@ -59,7 +69,9 @@ export function ProjectShowcase(): React.JSX.Element {
               Featured Engineering Projects
             </h2>
             <p className="text-neutral-400 max-w-xl text-base">
-              A curated catalog of scalable systems, complex UI engineering solutions, and distributed architectures built with strict aesthetic standards.
+              A curated catalog of scalable systems, complex UI engineering
+              solutions, and distributed architectures built with strict
+              aesthetic standards.
             </p>
           </div>
           <Link
@@ -74,7 +86,7 @@ export function ProjectShowcase(): React.JSX.Element {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {PROJECT_ITEMS.map(project => (
+          {PROJECT_ITEMS.map((project) => (
             <div
               key={project.id}
               className={`flex flex-col justify-between p-8 rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-[12px] hover:border-[#318CE7]/50 hover:shadow-[0_0_24px_rgba(49,140,231,0.1)] transition-all duration-300 group ${
@@ -122,7 +134,7 @@ export function ProjectShowcase(): React.JSX.Element {
               </div>
 
               <div className="flex flex-wrap gap-2 pt-4 border-t border-white/5">
-                {project.tags.map(tag => (
+                {project.tags.map((tag) => (
                   <span
                     key={tag}
                     className="text-xs px-3 py-1 rounded-md bg-white/5 text-[#318CE7] font-medium border border-[#318CE7]/10"
