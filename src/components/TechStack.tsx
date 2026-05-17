@@ -1,6 +1,7 @@
 'use client';
-import React, { useState } from 'react';
 import { ChevronDown, ChevronUp, Layers, Terminal, Users } from 'lucide-react';
+import type React from 'react';
+import { useState } from 'react';
 
 interface ITechSkill {
   readonly name: string;
