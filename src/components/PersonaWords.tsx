@@ -64,6 +64,7 @@ export function PersonaWords() {
           className="persona-word absolute text-5xl md:text-7xl lg:text-[10rem] font-black text-center uppercase tracking-tighter text-foreground px-4 leading-none"
         >
           {word}
+          <span className="text-primary">.</span>
         </h2>
       ))}
     </section>
