@@ -1,4 +1,5 @@
 import { ExternalLink, FolderGit2 } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
 import type React from 'react';
 import { FaGithub } from 'react-icons/fa';
@@ -11,6 +12,7 @@ interface IProjectItem {
   readonly githubUrl?: string;
   readonly liveUrl?: string;
   readonly isFeatured?: boolean;
+  readonly imageUrl?: string;
 }
 
 const PROJECT_ITEMS: readonly IProjectItem[] = [
@@ -89,59 +91,79 @@ export function ProjectShowcase(): React.JSX.Element {
           {PROJECT_ITEMS.map((project) => (
             <div
               key={project.id}
-              className={`flex flex-col justify-between p-8 rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-[12px] hover:border-[#318CE7]/50 hover:shadow-[0_0_24px_rgba(49,140,231,0.1)] transition-all duration-300 group ${
+              className={`flex flex-col rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-[12px] hover:border-[#318CE7]/50 hover:shadow-[0_0_24px_rgba(49,140,231,0.1)] transition-all duration-300 group overflow-hidden ${
                 project.isFeatured ? 'md:col-span-1' : ''
               }`}
             >
-              <div>
-                <div className="flex items-center justify-between gap-4 mb-6">
-                  <div className="p-3 rounded-xl bg-white/5 border border-white/10 text-[#318CE7] group-hover:scale-110 transition-transform duration-300">
-                    <FolderGit2 className="w-6 h-6" />
-                  </div>
-                  <div className="flex items-center gap-3">
-                    {project.githubUrl && (
-                      <Link
-                        href={project.githubUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-neutral-400 hover:text-[#318CE7] transition-colors p-2 rounded-lg hover:bg-white/5"
-                        aria-label={`GitHub repository for ${project.title}`}
-                      >
-                        <FaGithub className="w-5 h-5" />
-                      </Link>
-                    )}
-                    {project.liveUrl && (
-                      <Link
-                        href={project.liveUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-neutral-400 hover:text-[#318CE7] transition-colors p-2 rounded-lg hover:bg-white/5"
-                        aria-label={`Live demo for ${project.title}`}
-                      >
-                        <ExternalLink className="w-5 h-5" />
-                      </Link>
-                    )}
-                  </div>
-                </div>
-
-                <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-[#318CE7] transition-colors">
-                  {project.title}
-                </h3>
-
-                <p className="text-sm text-neutral-400 mb-8 leading-relaxed line-clamp-4">
-                  {project.description}
-                </p>
+              {/* Media Header Area */}
+              <div className="w-full h-48 sm:h-56 bg-gradient-to-br from-white/5 to-transparent border-b border-white/5 flex items-center justify-center relative overflow-hidden group-hover:from-white/10 transition-colors duration-300">
+                {project.imageUrl ? (
+                  <Image
+                    src={project.imageUrl}
+                    alt={project.title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                ) : (
+                  <span className="text-white/20 font-medium text-sm tracking-widest uppercase">
+                    Media Placeholder
+                  </span>
+                )}
               </div>
 
-              <div className="flex flex-wrap gap-2 pt-4 border-t border-white/5">
-                {project.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="text-xs px-3 py-1 rounded-md bg-white/5 text-[#318CE7] font-medium border border-[#318CE7]/10"
-                  >
-                    {tag}
-                  </span>
-                ))}
+              {/* Card Content */}
+              <div className="flex flex-col justify-between p-8 flex-1">
+                <div>
+                  <div className="flex items-center justify-between gap-4 mb-6">
+                    <div className="p-3 rounded-xl bg-white/5 border border-white/10 text-[#318CE7] group-hover:scale-110 transition-transform duration-300">
+                      <FolderGit2 className="w-6 h-6" />
+                    </div>
+                    <div className="flex items-center gap-3">
+                      {project.githubUrl && (
+                        <Link
+                          href={project.githubUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-neutral-400 hover:text-[#318CE7] transition-colors p-2 rounded-lg hover:bg-white/5"
+                          aria-label={`GitHub repository for ${project.title}`}
+                        >
+                          <FaGithub className="w-5 h-5" />
+                        </Link>
+                      )}
+                      {project.liveUrl && (
+                        <Link
+                          href={project.liveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-neutral-400 hover:text-[#318CE7] transition-colors p-2 rounded-lg hover:bg-white/5"
+                          aria-label={`Live demo for ${project.title}`}
+                        >
+                          <ExternalLink className="w-5 h-5" />
+                        </Link>
+                      )}
+                    </div>
+                  </div>
+
+                  <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-[#318CE7] transition-colors">
+                    {project.title}
+                  </h3>
+
+                  <p className="text-sm text-neutral-400 mb-8 leading-relaxed line-clamp-4">
+                    {project.description}
+                  </p>
+                </div>
+
+                <div className="flex flex-wrap gap-2 pt-4 border-t border-white/5">
+                  {project.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="text-xs px-3 py-1 rounded-md bg-white/5 text-[#318CE7] font-medium border border-[#318CE7]/10"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           ))}
