@@ -122,7 +122,7 @@ export function Hero() {
 
       {/* Marquee Text Overlay */}
       {/* It's positioned absolute at the bottom to overlay the image, with mix-blend-difference */}
-      <div className="absolute bottom-[15%] md:bottom-[5%] left-0 w-full z-20 pointer-events-none mix-blend-difference overflow-hidden">
+      <div className="absolute bottom-[7%] md:bottom-[5%] left-0 w-full z-20 pointer-events-none mix-blend-difference overflow-hidden">
         <div
           ref={marqueeRef}
           className="flex whitespace-nowrap text-[100px] md:text-[150px] lg:text-[200px] font-bold tracking-tighter leading-none text-white uppercase w-max"
