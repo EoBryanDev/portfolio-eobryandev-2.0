@@ -28,7 +28,7 @@ export function Hero() {
   return (
     <section
       ref={container}
-      className="relative w-full h-[100dvh] flex flex-col items-center justify-center overflow-hidden bg-background -mt-16"
+      className="relative w-full h-dvh flex flex-col items-center justify-center overflow-hidden bg-background -mt-16"
     >
       {/* Wavy Binary Background on Right */}
       <div className="absolute bottom-0 right-0 w-full h-full z-0 pointer-events-none">
@@ -113,7 +113,7 @@ export function Hero() {
           alt="Mauricio Bryan"
           width={1000}
           height={1000}
-          className="object-contain object-bottom h-[80dvh] md:h-[100dvh] w-auto max-w-none md:max-w-full drop-shadow-2xl grayscale translate-x-4 md:translate-x-24 lg:translate-x-[20vw]"
+          className="object-contain object-bottom h-[80dvh] md:h-dvh w-auto max-w-none md:max-w-full drop-shadow-2xl grayscale translate-x-4 md:translate-x-24 lg:translate-x-[20vw]"
           priority
           quality={100}
           unoptimized

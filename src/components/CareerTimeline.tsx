@@ -146,11 +146,11 @@ export function CareerTimeline(): React.JSX.Element {
                   }`}
                 >
                   {/* Icon Marker on the central timeline */}
-                  <div className="timeline-icon absolute left-6 md:left-1/2 top-6 md:top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-[#121212] border-2 border-[#318CE7] flex items-center justify-center z-10 shadow-[0_0_16px_rgba(49,140,231,0.2)]">
+                  <div className="timeline-icon absolute left-6 md:left-1/2 top-6 md:top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-background border-2 border-primary flex items-center justify-center z-10 shadow-[0_0_16px_rgba(49,140,231,0.2)]">
                     {item.type === 'work' ? (
-                      <Briefcase className="w-5 h-5 text-[#318CE7]" />
+                      <Briefcase className="w-5 h-5 text-primary" />
                     ) : (
-                      <GraduationCap className="w-5 h-5 text-[#318CE7]" />
+                      <GraduationCap className="w-5 h-5 text-primary" />
                     )}
                   </div>
 
@@ -159,9 +159,9 @@ export function CareerTimeline(): React.JSX.Element {
 
                   {/* Content Card */}
                   <div className="timeline-card w-full md:w-1/2 pl-16 md:pl-0 md:px-8">
-                    <div className="p-8 rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-[12px] hover:border-[#318CE7]/40 transition-all duration-300 group">
+                    <div className="p-8 rounded-2xl border border-white/10 bg-white/3 backdrop-blur-md hover:border-primary transition-all duration-300 group">
                       <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
-                        <span className="text-xs font-bold text-[#318CE7] tracking-wider uppercase">
+                        <span className="text-xs font-bold text-primary tracking-wider uppercase">
                           {item.period}
                         </span>
                         <span className="text-xs text-neutral-500 font-medium">

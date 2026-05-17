@@ -22,7 +22,7 @@ const TECH_CATEGORIES: readonly ITechCategory[] = [
     title: 'Fullstack',
     description:
       'High-performance web applications, responsive interfaces, and scalable API development.',
-    icon: <Layers className="w-6 h-6 text-[#318CE7]" />,
+    icon: <Layers className="w-6 h-6 text-primary" />,
     skills: [
       { name: 'React / Next.js', level: 'Advanced' },
       { name: 'TypeScript', level: 'Advanced' },
@@ -37,7 +37,7 @@ const TECH_CATEGORIES: readonly ITechCategory[] = [
     title: 'DevOps',
     description:
       'Infrastructure automation, continuous integration workflows, and deployment orchestration.',
-    icon: <Terminal className="w-6 h-6 text-[#318CE7]" />,
+    icon: <Terminal className="w-6 h-6 text-primary" />,
     skills: [
       { name: 'Docker / Containers', level: 'Intermediate' },
       { name: 'CI/CD Pipelines', level: 'Intermediate' },
@@ -51,7 +51,7 @@ const TECH_CATEGORIES: readonly ITechCategory[] = [
     title: 'Softskills',
     description:
       'Effective technical communication, iterative problem-solving, and collaborative engineering.',
-    icon: <Users className="w-6 h-6 text-[#318CE7]" />,
+    icon: <Users className="w-6 h-6 text-primary" />,
     skills: [
       { name: 'Technical Communication', level: 'Advanced' },
       { name: 'Iterative Engineering', level: 'Advanced' },
@@ -88,12 +88,12 @@ export function TechStack(): React.JSX.Element {
             return (
               <div
                 key={category.id}
-                className="transition-all duration-300 rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-[12px] overflow-hidden"
+                className="transition-all duration-300 rounded-2xl border border-white/10 bg-white/3 backdrop-blur-md overflow-hidden"
               >
                 <button
                   type="button"
                   onClick={() => toggleCategory(category.id)}
-                  className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-white/[0.02] transition-colors cursor-pointer"
+                  className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-white/2 transition-colors cursor-pointer"
                   aria-expanded={isExpanded}
                 >
                   <div className="flex items-center gap-6">
@@ -109,7 +109,7 @@ export function TechStack(): React.JSX.Element {
                       </p>
                     </div>
                   </div>
-                  <div className="shrink-0 ml-4 text-neutral-400 hover:text-[#318CE7] transition-colors">
+                  <div className="shrink-0 ml-4 text-neutral-400 hover:text-primary transition-colors">
                     {isExpanded ? (
                       <ChevronUp className="w-5 h-5" />
                     ) : (
@@ -124,12 +124,12 @@ export function TechStack(): React.JSX.Element {
                       {category.skills.map((skill) => (
                         <div
                           key={skill.name}
-                          className="flex items-center justify-between p-4 rounded-xl bg-white/5 border border-white/5 hover:border-[#318CE7]/30 transition-colors"
+                          className="flex items-center justify-between p-4 rounded-xl bg-white/5 border border-white/5 hover:border-primary/30 transition-colors"
                         >
                           <span className="font-medium text-white text-sm">
                             {skill.name}
                           </span>
-                          <span className="text-xs px-3 py-1 rounded-full bg-[#318CE7]/10 text-[#318CE7] font-semibold border border-[#318CE7]/20">
+                          <span className="text-xs px-3 py-1 rounded-full bg-primary/10 text-primary font-semibold border border-primary/20">
                             {skill.level}
                           </span>
                         </div>
