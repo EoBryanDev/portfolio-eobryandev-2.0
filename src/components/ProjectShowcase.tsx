@@ -1,8 +1,16 @@
+'use client';
+
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ExternalLink, FolderGit2 } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import type React from 'react';
+import { useRef } from 'react';
 import { FaGithub } from 'react-icons/fa';
+
+gsap.registerPlugin(ScrollTrigger);
 
 interface IProjectItem {
   readonly id: string;
@@ -62,10 +70,56 @@ const PROJECT_ITEMS: readonly IProjectItem[] = [
 ];
 
 export function ProjectShowcase(): React.JSX.Element {
+  const containerRef = useRef<HTMLElement>(null);
+
+  useGSAP(
+    () => {
+      gsap.fromTo(
+        '.projects-header',
+        { y: 30, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.6,
+          ease: 'power2.out',
+          scrollTrigger: {
+            trigger: '.projects-header',
+            start: 'top 85%',
+            toggleActions: 'play none none reverse',
+          },
+        },
+      );
+
+      const cards = gsap.utils.toArray<HTMLElement>('.project-card');
+      cards.forEach((card) => {
+        gsap.fromTo(
+          card as HTMLElement,
+          { y: 50, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.6,
+            ease: 'power2.out',
+            scrollTrigger: {
+              trigger: card,
+              start: 'top 85%',
+              toggleActions: 'play none none reverse',
+            },
+          },
+        );
+      });
+    },
+    { scope: containerRef },
+  );
+
   return (
-    <section id="projects" className="py-24 border-t border-white/10">
+    <section
+      ref={containerRef}
+      id="projects"
+      className="py-24 border-t border-white/10"
+    >
       <div className="container mx-auto px-6 max-w-6xl">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+        <div className="projects-header flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
           <div>
             <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-white mb-4">
               Featured Engineering Projects
@@ -87,11 +141,11 @@ export function ProjectShowcase(): React.JSX.Element {
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="projects-grid grid grid-cols-1 md:grid-cols-2 gap-8">
           {PROJECT_ITEMS.map((project) => (
             <div
               key={project.id}
-              className={`flex flex-col rounded-2xl border border-white/10 bg-white/3 backdrop-blur-md hover:border-primary/50 hover:shadow-[0_0_24px_rgba(49,140,231,0.1)] transition-all duration-300 group overflow-hidden ${
+              className={`project-card flex flex-col rounded-2xl border border-white/10 bg-white/3 backdrop-blur-md hover:border-primary/50 hover:shadow-[0_0_24px_rgba(49,140,231,0.1)] transition-all duration-300 group overflow-hidden ${
                 project.isFeatured ? 'md:col-span-1' : ''
               }`}
             >

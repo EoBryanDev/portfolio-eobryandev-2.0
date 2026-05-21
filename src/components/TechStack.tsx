@@ -1,7 +1,12 @@
 'use client';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ChevronDown, ChevronUp, Layers, Terminal, Users } from 'lucide-react';
 import type React from 'react';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
+
+gsap.registerPlugin(ScrollTrigger);
 
 interface ITechSkill {
   readonly name: string;
@@ -63,15 +68,60 @@ const TECH_CATEGORIES: readonly ITechCategory[] = [
 
 export function TechStack(): React.JSX.Element {
   const [expandedId, setExpandedId] = useState<string | null>('fullstack');
+  const containerRef = useRef<HTMLElement>(null);
+
+  useGSAP(
+    () => {
+      gsap.fromTo(
+        '.tech-header',
+        { y: 30, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.6,
+          ease: 'power2.out',
+          scrollTrigger: {
+            trigger: '.tech-header',
+            start: 'top 85%',
+            toggleActions: 'play none none reverse',
+          },
+        },
+      );
+
+      const categories = gsap.utils.toArray<HTMLElement>('.tech-category');
+      categories.forEach((category) => {
+        gsap.fromTo(
+          category as HTMLElement,
+          { y: 50, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.6,
+            ease: 'power2.out',
+            scrollTrigger: {
+              trigger: category,
+              start: 'top 85%',
+              toggleActions: 'play none none reverse',
+            },
+          },
+        );
+      });
+    },
+    { scope: containerRef },
+  );
 
   const toggleCategory = (id: string): void => {
     setExpandedId((prev) => (prev === id ? null : id));
   };
 
   return (
-    <section id="tech-stack" className="py-24 mt-24 border-t border-white/10">
+    <section
+      ref={containerRef}
+      id="tech-stack"
+      className="py-24 mt-24 border-t border-white/10"
+    >
       <div className="container mx-auto px-6 max-w-5xl">
-        <div className="text-center md:text-left mb-16">
+        <div className="tech-header text-center md:text-left mb-16">
           <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-white mb-4">
             Technical Stack &amp; Proficiencies
           </h2>
@@ -82,13 +132,13 @@ export function TechStack(): React.JSX.Element {
           </p>
         </div>
 
-        <div className="flex flex-col gap-6">
+        <div className="tech-categories flex flex-col gap-6">
           {TECH_CATEGORIES.map((category) => {
             const isExpanded = expandedId === category.id;
             return (
               <div
                 key={category.id}
-                className="transition-all duration-300 rounded-2xl border border-white/10 bg-white/3 backdrop-blur-md overflow-hidden"
+                className="tech-category transition-all duration-300 rounded-2xl border border-white/10 bg-white/3 backdrop-blur-md overflow-hidden"
               >
                 <button
                   type="button"
