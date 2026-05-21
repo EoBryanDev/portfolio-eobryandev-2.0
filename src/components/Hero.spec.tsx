@@ -31,10 +31,10 @@ describe('Hero', () => {
     expect(elements.length).toBeGreaterThan(0);
   });
 
-  it('renders the location badge and image placeholder', () => {
+  it('renders the location badge and image', () => {
     render(<Hero />);
 
     expect(screen.getByText('Interior de São Paulo, Brasil.')).toBeDefined();
-    expect(screen.getByText('Image Placeholder')).toBeDefined();
+    expect(screen.getByAltText('Mauricio Bryan')).toBeDefined();
   });
 });

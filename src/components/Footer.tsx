@@ -8,7 +8,7 @@ export function Footer() {
       id="contact"
       className="border-t border-white/10 bg-background/50 py-12 mt-24"
     >
-      <div className="container mx-auto px-6">
+      <div className="w-full px-4 md:px-12">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-center md:text-left">
             <h2 className="text-2xl font-bold tracking-tight mb-2">

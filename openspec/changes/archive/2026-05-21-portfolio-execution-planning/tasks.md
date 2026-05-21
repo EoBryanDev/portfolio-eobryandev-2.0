@@ -24,6 +24,6 @@
 
 ## 5. Polish and Optimization
 
-- [ ] 5.1 Add GSAP ScrollTrigger animations to content sections (Tech Stack, Timeline, Projects)
-- [ ] 5.2 Optimize loading strategies and run Lighthouse audit to ensure >90 score
-- [ ] 5.3 Final responsiveness and accessibility pass across mobile and tablet devices
+- [x] 5.1 Add GSAP ScrollTrigger animations to content sections (Tech Stack, Timeline, Projects)
+- [x] 5.2 Optimize loading strategies and run Lighthouse audit to ensure >90 score
+- [x] 5.3 Final responsiveness and accessibility pass across mobile and tablet devices
