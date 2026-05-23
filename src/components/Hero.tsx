@@ -81,7 +81,7 @@ export function Hero() {
             <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.8)]"></span>
           </div>
           <span className="text-base md:text-lg font-medium tracking-wide text-neutral-400">
-            Interior de São Paulo, Brasil.
+            Itu, São Paulo, Brasil.
           </span>
         </div>
 
@@ -91,16 +91,16 @@ export function Hero() {
             <span className="text-neutral-500 text-xl md:text-3xl align-top mr-2">
               #
             </span>
-            FULLSTACK
+            DESENVOLVEDOR
             <br />
-            DEVELOPER
+            FULLSTACK
           </div>
 
           {/* Subtitle / Education */}
           <div className="flex items-center gap-2 text-neutral-400 mt-2">
             <MapPin className="w-4 h-4 md:w-5 md:h-5 text-primary shrink-0" />
             <span className="text-sm font-medium tracking-wide">
-              Software Engineering, Cruzeiro do Sul 2026
+              Engenharia de Software, Cruzeiro do Sul 2025
             </span>
           </div>
         </div>

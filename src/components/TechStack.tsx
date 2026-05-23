@@ -26,42 +26,45 @@ const TECH_CATEGORIES: readonly ITechCategory[] = [
     id: 'fullstack',
     title: 'Fullstack',
     description:
-      'High-performance web applications, responsive interfaces, and scalable API development.',
+      'Aplicações web de alta performance, interfaces responsivas e desenvolvimento de APIs escaláveis.',
     icon: <Layers className="w-6 h-6 text-primary" />,
     skills: [
-      { name: 'React / Next.js', level: 'Advanced' },
-      { name: 'TypeScript', level: 'Advanced' },
-      { name: 'Tailwind CSS / Vanilla CSS', level: 'Advanced' },
-      { name: 'Node.js / Express', level: 'Advanced' },
-      { name: 'PostgreSQL / SQL', level: 'Intermediate' },
-      { name: 'GSAP / Animations', level: 'Advanced' },
+      { name: 'Node.js / Express', level: 'Avançado' },
+      { name: 'React.js / Next.js', level: 'Avançado' },
+      { name: 'TypeScript / JavaScript', level: 'Avançado' },
+      { name: 'PL/SQL & PostgreSQL', level: 'Avançado' },
+      { name: 'MongoDB / Redis', level: 'Intermediário' },
+      { name: 'Tailwind CSS', level: 'Avançado' },
+      { name: 'IA', level: 'Intermediário' },
     ],
   },
   {
     id: 'devops',
     title: 'DevOps',
     description:
-      'Infrastructure automation, continuous integration workflows, and deployment orchestration.',
+      'Automação de infraestrutura, pipelines de integração contínua e orquestração de deploys.',
     icon: <Terminal className="w-6 h-6 text-primary" />,
     skills: [
-      { name: 'Docker / Containers', level: 'Intermediate' },
-      { name: 'CI/CD Pipelines', level: 'Intermediate' },
-      { name: 'Linux / Bash Scripting', level: 'Advanced' },
-      { name: 'Git / Version Control', level: 'Advanced' },
-      { name: 'Cloud Hosting (VPS / Vercel)', level: 'Intermediate' },
+      { name: 'Docker / Containers', level: 'Avançado' },
+      { name: 'Kubernetes', level: 'Intermediário' },
+      { name: 'Ansible / Terraform', level: 'Intermediário' },
+      { name: 'Linux', level: 'Intermediário' },
+      { name: 'Git', level: 'Avançado' },
+      { name: 'Pipelines CI/CD', level: 'Intermediário' },
+      { name: 'Cloud Computing', level: 'Básico' },
     ],
   },
   {
     id: 'softskills',
-    title: 'Softskills',
+    title: 'Soft Skills',
     description:
-      'Effective technical communication, iterative problem-solving, and collaborative engineering.',
+      'Comunicação técnica eficaz, resolução autônoma de problemas e metodologias ágeis.',
     icon: <Users className="w-6 h-6 text-primary" />,
     skills: [
-      { name: 'Technical Communication', level: 'Advanced' },
-      { name: 'Iterative Engineering', level: 'Advanced' },
-      { name: 'Autonomous Problem-Solving', level: 'Advanced' },
-      { name: 'Agile / Collaboration', level: 'Advanced' },
+      { name: 'Comunicação Técnica', level: 'Avançado' },
+      { name: 'Engenharia Iterativa', level: 'Avançado' },
+      { name: 'Resolução de Problemas', level: 'Avançado' },
+      { name: 'Colaboração & Ágil', level: 'Avançado' },
     ],
   },
 ];
@@ -107,7 +110,7 @@ export function TechStack(): React.JSX.Element {
         );
       });
     },
-    { scope: containerRef },
+    { scope: containerRef, dependencies: [TECH_CATEGORIES.length] },
   );
 
   const toggleCategory = (id: string): void => {
@@ -123,12 +126,11 @@ export function TechStack(): React.JSX.Element {
       <div className="container mx-auto px-6 max-w-5xl">
         <div className="tech-header text-center md:text-left mb-16">
           <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-white mb-4">
-            Technical Stack &amp; Proficiencies
+            Stack Tecnológico &amp; Competências
           </h2>
           <p className="text-neutral-400 max-w-2xl text-base">
-            Minimalist and expandable breakdown of specialized core competencies
-            across frontend architecture, backend infrastructure, and essential
-            workflows.
+            Uma visão abrangente das especialidades centrais em arquitetura
+            frontend, infraestrutura backend e processos essenciais.
           </p>
         </div>
 

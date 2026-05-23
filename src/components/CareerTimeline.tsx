@@ -24,35 +24,58 @@ const TIMELINE_ITEMS: readonly ITimelineItem[] = [
   {
     id: 'role-senior',
     type: 'work',
-    title: 'Senior Frontend Engineer',
-    organization: 'Tech Innovations Inc.',
-    period: '2024 - Present',
-    location: 'Remote',
+    title: 'Fullstack Developer',
+    organization: 'Senior Sistemas (Senior Mega)',
+    period: 'Dez 2022 - Atualmente',
+    location: 'Itu, São Paulo',
     description:
-      'Spearheaded the architectural migration of core micro-frontends to Next.js App Router, boosting rendering speeds and SEO metrics. Implemented strict custom design token systems and high-performance GSAP animations.',
-    highlights: ['Next.js App Router', 'TypeScript', 'GSAP', 'Tailwind CSS'],
+      'Desenvolvimento de integrações complexas entre sistemas de terceiros e o MEGA ERP (segmentos de manufatura, empresarial, construção, etc...). Atuação em equipe de serviços de software focada no cliente, prestando suporte técnico avançado e apoiando a revitalização de sistemas legados. Apoio técnico estratégico em iniciativas de DevOps e inovação, incluindo a estruturação e automação de servidores de publicação.',
+    highlights: [
+      'Integrações de Sistemas',
+      'MEGA ERP',
+      'PLSQL',
+      'DevOps & Inovação',
+      'Node.js / TS',
+      'Revitalização de Legados',
+    ],
   },
   {
-    id: 'role-fullstack',
-    type: 'work',
-    title: 'Fullstack Software Engineer',
-    organization: 'Digital Solutions Studio',
-    period: '2022 - 2024',
-    location: 'São Paulo, Brasil',
-    description:
-      'Architected highly robust internal API infrastructures and real-time dashboard interfaces. Streamlined continuous deployment automation and integrated containerized PostgreSQL database pipelines.',
-    highlights: ['React', 'Node.js', 'Express', 'PostgreSQL', 'Docker'],
-  },
-  {
-    id: 'edu-cs',
+    id: 'edu-eng',
     type: 'education',
-    title: 'B.S. in Computer Science',
-    organization: 'University of São Paulo (USP)',
-    period: '2018 - 2022',
-    location: 'São Paulo, Brasil',
+    title: 'Bacharelado em Engenharia de Software',
+    organization: 'Centro Universitário Nossa Senhora do Patrocínio (CEUNSP)',
+    period: '2022 - 2025',
+    location: 'Itu, São Paulo',
     description:
-      'Graduated with comprehensive focus on distributed systems, advanced algorithm optimization, and software engineering methodologies.',
-    highlights: ['Distributed Systems', 'Algorithms', 'System Architecture'],
+      'Formação transdisciplinar focada no ciclo de vida completo do software. Experiência prática em arquitetura de sistemas, metodologias ágeis, segurança da informação e governança de TI. Ênfase em engenharia de qualidade, automação (DevOps) e soluções escaláveis em nuvem.',
+    highlights: [
+      'Arquitetura de Sistemas',
+      'Engenharia de Qualidade',
+      'Segurança da Informação',
+      'DevOps & Nuvem',
+      'Metodologias Ágeis',
+      'Governança de TI',
+      'PLSQL / JAVA',
+    ],
+  },
+  {
+    id: 'edu-senai',
+    type: 'education',
+    title: 'Técnico em Desenvolvimento Web Full Stack',
+    organization: 'Escola SENAI de Informática',
+    period: '2020 - 2022',
+    location: 'São Paulo',
+    description:
+      'Formação técnica intensiva focada no desenvolvimento de ponta a ponta. Experiência prática com estruturação de interfaces responsivas, modelagem de banco de dados, construção de APIs robustas, testes de software e implantação de sistemas.',
+    highlights: [
+      'Desenvolvimento Front-end',
+      'APIs RESTful',
+      'Modelagem de Dados',
+      'Testes de Software',
+      'Implantação de Sistemas',
+      'Java',
+      'Javascript / Angular / Jasmine',
+    ],
   },
 ];
 
@@ -111,7 +134,7 @@ export function CareerTimeline(): React.JSX.Element {
         }
       });
     },
-    { scope: containerRef },
+    { scope: containerRef, dependencies: [TIMELINE_ITEMS.length] },
   );
 
   return (
@@ -123,11 +146,11 @@ export function CareerTimeline(): React.JSX.Element {
       <div className="container mx-auto px-6 max-w-5xl">
         <div className="text-center mb-20">
           <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-white mb-4">
-            Career Timeline &amp; Education
+            Trajetória Profissional &amp; Educação
           </h2>
           <p className="text-neutral-400 max-w-2xl mx-auto text-base">
-            A chronological journey through high-impact professional engineering
-            roles and rigorous foundational academic milestones.
+            Uma jornada cronológica através de experiências de alto impacto no
+            desenvolvimento de software e conquistas fundamentais na academia.
           </p>
         </div>
 
@@ -176,11 +199,11 @@ export function CareerTimeline(): React.JSX.Element {
                         {item.organization}
                       </h4>
 
-                      <p className="text-sm text-neutral-400 mb-6 leading-relaxed">
+                      <p className="text-sm text-neutral-400 mb-6 leading-relaxed flex-1">
                         {item.description}
                       </p>
 
-                      <div className="flex flex-wrap gap-2">
+                      <div className="flex flex-wrap gap-2 mt-auto">
                         {item.highlights.map((highlight) => (
                           <span
                             key={highlight}
