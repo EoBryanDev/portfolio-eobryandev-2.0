@@ -61,6 +61,7 @@ const TECH_CATEGORIES: readonly ITechCategory[] = [
       'Comunicação técnica eficaz, resolução autônoma de problemas e metodologias ágeis.',
     icon: <Users className="w-6 h-6 text-primary" />,
     skills: [
+      { name: 'Inglês Profissional', level: 'Intermediário' },
       { name: 'Comunicação Técnica', level: 'Avançado' },
       { name: 'Engenharia Iterativa', level: 'Avançado' },
       { name: 'Resolução de Problemas', level: 'Avançado' },
