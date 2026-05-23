@@ -8,7 +8,9 @@ describe('CareerTimeline', () => {
     render(<CareerTimeline />);
 
     // Act & Assert
-    expect(screen.getByText(/Career Timeline & Education/i)).toBeDefined();
+    expect(
+      screen.getByText(/Trajetória Profissional & Educação/i),
+    ).toBeDefined();
   });
 
   it('renders all career and education milestone titles', () => {
@@ -16,9 +18,13 @@ describe('CareerTimeline', () => {
     render(<CareerTimeline />);
 
     // Act & Assert
-    expect(screen.getByText('Senior Frontend Engineer')).toBeDefined();
-    expect(screen.getByText('Fullstack Software Engineer')).toBeDefined();
-    expect(screen.getByText('B.S. in Computer Science')).toBeDefined();
+    expect(screen.getByText('Fullstack Developer')).toBeDefined();
+    expect(
+      screen.getByText('Bacharelado em Engenharia de Software'),
+    ).toBeDefined();
+    expect(
+      screen.getByText('Técnico em Desenvolvimento Web Full Stack'),
+    ).toBeDefined();
   });
 
   it('renders organization names and time periods correctly', () => {
@@ -26,8 +32,12 @@ describe('CareerTimeline', () => {
     render(<CareerTimeline />);
 
     // Act & Assert
-    expect(screen.getByText('Tech Innovations Inc.')).toBeDefined();
-    expect(screen.getByText('University of São Paulo (USP)')).toBeDefined();
-    expect(screen.getByText('2024 - Present')).toBeDefined();
+    expect(screen.getByText('Senior Sistemas (Senior Mega)')).toBeDefined();
+    expect(
+      screen.getByText(
+        'Centro Universitário Nossa Senhora do Patrocínio (CEUNSP)',
+      ),
+    ).toBeDefined();
+    expect(screen.getByText('Dez 2022 - Atualmente')).toBeDefined();
   });
 });

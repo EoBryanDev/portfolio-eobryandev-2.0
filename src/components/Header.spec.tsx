@@ -10,8 +10,8 @@ describe('Header', () => {
     // Act & Assert
     expect(screen.getByText(/EoBryanDev/i)).toBeDefined();
     expect(screen.getByText(/Stack/i)).toBeDefined();
-    expect(screen.getByText(/Timeline/i)).toBeDefined();
-    expect(screen.getByText(/Projects/i)).toBeDefined();
-    expect(screen.getByText(/Contact/i)).toBeDefined();
+    expect(screen.getByText(/Trajetória/i)).toBeDefined();
+    expect(screen.getByText(/Projetos/i)).toBeDefined();
+    expect(screen.getByText(/Contato/i)).toBeDefined();
   });
 });

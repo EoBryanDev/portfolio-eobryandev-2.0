@@ -163,7 +163,7 @@ export function ProjectShowcase(): React.JSX.Element {
           {PROJECT_ITEMS.map((project) => (
             <div
               key={project.id}
-              className={`project-card flex flex-col rounded-2xl border border-white/10 bg-white/3 backdrop-blur-md hover:border-primary/50 hover:shadow-[0_0_24px_rgba(49,140,231,0.1)] transition-all duration-300 group overflow-hidden ${
+              className={`project-card flex flex-col h-full rounded-2xl border border-white/10 bg-white/3 backdrop-blur-md hover:border-primary/50 hover:shadow-[0_0_24px_rgba(49,140,231,0.1)] transition-all duration-300 group overflow-hidden ${
                 project.isFeatured ? 'md:col-span-1' : ''
               }`}
             >
@@ -216,15 +216,15 @@ export function ProjectShowcase(): React.JSX.Element {
                   </div>
                 </div>
 
-                <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-primary transition-colors line-clamp-2 h-16">
+                <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-primary transition-colors line-clamp-2">
                   {project.title}
                 </h3>
 
-                <p className="text-sm text-neutral-400 mb-8 leading-relaxed line-clamp-4 h-24">
+                <p className="text-sm text-neutral-400 mb-8 leading-relaxed line-clamp-4 flex-1">
                   {project.description}
                 </p>
 
-                <div className="flex flex-wrap content-start gap-2 pt-4 border-t border-white/5 min-h-20">
+                <div className="flex flex-wrap gap-2 pt-4 border-t border-white/5 mt-auto">
                   {project.tags.map((tag) => (
                     <span
                       key={tag}

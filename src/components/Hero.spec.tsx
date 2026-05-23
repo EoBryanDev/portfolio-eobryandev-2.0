@@ -34,7 +34,7 @@ describe('Hero', () => {
   it('renders the location badge and image', () => {
     render(<Hero />);
 
-    expect(screen.getByText('Interior de São Paulo, Brasil.')).toBeDefined();
+    expect(screen.getByText('Itu, São Paulo, Brasil.')).toBeDefined();
     expect(screen.getByAltText('Mauricio Bryan')).toBeDefined();
   });
 });

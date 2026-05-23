@@ -8,8 +8,8 @@ describe('ProjectShowcase', () => {
     render(<ProjectShowcase />);
 
     // Act & Assert
-    expect(screen.getByText(/Featured Engineering Projects/i)).toBeDefined();
-    expect(screen.getByText(/View Complete Archive/i)).toBeDefined();
+    expect(screen.getByText(/Projetos em Destaque/i)).toBeDefined();
+    expect(screen.getByText(/Ver Arquivo Completo/i)).toBeDefined();
   });
 
   it('renders mock project titles and descriptions', () => {
@@ -17,9 +17,9 @@ describe('ProjectShowcase', () => {
     render(<ProjectShowcase />);
 
     // Act & Assert
-    expect(screen.getByText('Synit Core Platform')).toBeDefined();
+    expect(screen.getByText('Synit e-commerce')).toBeDefined();
     expect(screen.getByText('CyberAesthetic Portfolio Engine')).toBeDefined();
-    expect(screen.getByText('PL/SQL Distributed Synchronizer')).toBeDefined();
+    expect(screen.getByText('Health Check System')).toBeDefined();
   });
 
   it('renders project technology tags correctly', () => {

@@ -37,16 +37,16 @@ describe('PersonaWords Component', () => {
     render(<PersonaWords />);
 
     // Check if a word exists
-    expect(screen.getByText('life long learner')).toBeInTheDocument();
+    expect(screen.getByText('📚 eterno aprendiz')).toBeInTheDocument();
   });
 
   it('renders all the persona words', () => {
     render(<PersonaWords />);
 
     // Just checking for a few words
-    expect(screen.getByText('life long learner')).toBeInTheDocument();
-    expect(screen.getByText('pluviophile')).toBeInTheDocument();
-    expect(screen.getByText('tech lover')).toBeInTheDocument();
-    expect(screen.getByText('optimist')).toBeInTheDocument();
+    expect(screen.getByText('📚 eterno aprendiz')).toBeInTheDocument();
+    expect(screen.getByText('🌧️ pluviófilo')).toBeInTheDocument();
+    expect(screen.getByText('💻 amante da tecnologia')).toBeInTheDocument();
+    expect(screen.getByText('✨ otimista')).toBeInTheDocument();
   });
 });

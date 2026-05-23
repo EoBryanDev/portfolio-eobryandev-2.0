@@ -25,19 +25,19 @@ export function Header() {
             href="#timeline"
             className="hover:text-primary transition-colors"
           >
-            Timeline
+            Trajetória
           </Link>
           <Link
             href="#projects"
             className="hover:text-primary transition-colors"
           >
-            Projects
+            Projetos
           </Link>
           <Link
             href="#contact"
             className="hover:text-primary transition-colors"
           >
-            Contact
+            Contato
           </Link>
         </nav>
 
@@ -66,21 +66,21 @@ export function Header() {
               onClick={() => setIsOpen(false)}
               className="text-2xl font-medium hover:text-primary transition-colors"
             >
-              Timeline
+              Trajetória
             </Link>
             <Link
               href="#projects"
               onClick={() => setIsOpen(false)}
               className="text-2xl font-medium hover:text-primary transition-colors"
             >
-              Projects
+              Projetos
             </Link>
             <Link
               href="#contact"
               onClick={() => setIsOpen(false)}
               className="text-2xl font-medium hover:text-primary transition-colors"
             >
-              Contact
+              Contato
             </Link>
           </div>
         )}

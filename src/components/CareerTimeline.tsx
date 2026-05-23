@@ -182,7 +182,7 @@ export function CareerTimeline(): React.JSX.Element {
 
                   {/* Content Card */}
                   <div className="timeline-card w-full md:w-1/2 pl-16 md:pl-0 md:px-8">
-                    <div className="p-8 rounded-2xl border border-white/10 bg-white/3 backdrop-blur-md hover:border-primary transition-all duration-300 group">
+                    <div className="p-8 rounded-2xl border border-white/10 bg-white/3 backdrop-blur-md hover:border-primary transition-all duration-300 group h-full flex flex-col">
                       <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
                         <span className="text-xs font-bold text-primary tracking-wider uppercase">
                           {item.period}

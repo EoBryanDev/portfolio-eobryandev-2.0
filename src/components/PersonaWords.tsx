@@ -8,7 +8,12 @@ import { ParticleBackground } from './ParticleBackground';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const words = ['life long learner', 'pluviophile', 'tech lover', 'optimist'];
+const words = [
+  '📚 eterno aprendiz',
+  '🌧️ pluviófilo',
+  '💻 amante da tecnologia',
+  '✨ otimista',
+];
 
 export function PersonaWords() {
   const containerRef = useRef<HTMLDivElement>(null);
