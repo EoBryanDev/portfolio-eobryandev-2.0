@@ -64,7 +64,7 @@ const TIMELINE_ITEMS: readonly ITimelineItem[] = [
     title: 'Técnico em Desenvolvimento Web Full Stack',
     organization: 'Escola SENAI de Informática',
     period: '2020 - 2022',
-    location: 'São Paulo',
+    location: 'Itu, São Paulo',
     description:
       'Formação técnica intensiva focada no desenvolvimento de ponta a ponta. Experiência prática com estruturação de interfaces responsivas, modelagem de banco de dados, construção de APIs robustas, testes de software e implantação de sistemas.',
     highlights: [
