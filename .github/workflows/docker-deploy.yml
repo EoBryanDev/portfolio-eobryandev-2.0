@@ -1,0 +1,96 @@
+name: Docker Deploy (portfolio -> K8s)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'public/**'
+      - 'package.json'
+      - 'pnpm-lock.yaml'
+      - 'next.config.ts'
+      - 'Dockerfile'
+      - '.github/workflows/docker-deploy.yml'
+
+permissions:
+  contents: read
+  packages: write
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_WEB: ghcr.io/eobryandev/portfolio-web
+
+jobs:
+  build-push:
+    # ARM nativo (nodes do cluster são A1 ARM): build direto, sem QEMU.
+    runs-on: ubuntu-24.04-arm
+    outputs:
+      sha_tag: ${{ steps.meta.outputs.sha_tag }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Short SHA
+        id: meta
+        run: echo "sha_tag=$(git rev-parse --short HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Login GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build + push web (runner)
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: Dockerfile
+          target: runner
+          platforms: linux/arm64
+          push: true
+          tags: |
+            ${{ env.IMAGE_WEB }}:${{ steps.meta.outputs.sha_tag }}
+            ${{ env.IMAGE_WEB }}:latest
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+  bump-gitops:
+    needs: build-push
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout infra (PAT)
+        uses: actions/checkout@v4
+        with:
+          repository: EoBryanDev/oci-infra
+          ref: main
+          token: ${{ secrets.INFRA_PAT }}
+          path: infra
+
+      - name: Bump image tags
+        env:
+          SHA_TAG: ${{ needs.build-push.outputs.sha_tag }}
+        run: |
+          python3 - "$SHA_TAG" <<'EOF'
+          import sys
+          sha = sys.argv[1]
+          p = 'infra/k8s/apps/apps/portfolio/kustomization.yaml'
+          s = open(p).read()
+          import re
+          s = re.sub(r'(newName: ghcr\.io/eobryandev/portfolio-web\n\s+newTag: )\S+',
+                     lambda m: m.group(1) + sha, s)
+          open(p, 'w').write(s)
+          print(open(p).read())
+          EOF
+
+      - name: Commit + push
+        working-directory: infra
+        run: |
+          git config user.name "portfolio-deploy[bot]"
+          git config user.email "portfolio-deploy[bot]@users.noreply.github.com"
+          git add k8s/apps/apps/portfolio/kustomization.yaml
+          git commit -m "chore: portfolio image ${{ needs.build-push.outputs.sha_tag }}" || echo "nothing to commit"
+          git push origin main
